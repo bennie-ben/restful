@@ -1,4 +1,5 @@
 import app from "./app";
+import "./db";
 require('dotenv').config();
 
 const PORT = process.env.PORT || 4000;

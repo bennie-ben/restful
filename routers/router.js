@@ -1,14 +1,18 @@
 import express from "express";
-import { home, pageOne, pageTwo, pageThree } from "../controllers/controller";
+import { getNote, postNote, getUser, postLogin } from "../controllers/controller";
 
 const Router = express.Router();
 
-Router.get('/', home);
+// Show all notes
+Router.get('/notes', getNote);
 
-Router.get('/page1', pageOne);
+// Make a note
+Router.post('/notes', postNote);
 
-Router.get('/page2', pageTwo);
+// Show current user
+Router.get('/users', getUser);
 
-Router.get('/page3', pageThree);
+// Athenticate login
+Router.post('/login', postLogin);
 
 export default Router;

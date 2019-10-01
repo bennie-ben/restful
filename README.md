@@ -32,14 +32,16 @@
   title
   text
   comment
-  creator
+  creatorID = userID
+  createdAt
   
 - Comment
   id
   title
   text
   createdAt
-  creator
+  creatorName
+  creatorID
 
 
 
