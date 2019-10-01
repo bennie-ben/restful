@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import helmet from "helmet";
 import cors from "cors";
+import Router from "./routers/router";
 
 require('dotenv').config();
 
@@ -21,6 +22,6 @@ app.use(cors());
 
 // Routers
 
-app.get("/", (req, res)=> res.send("HELLo"));
+app.use("/", Router);
 
 export default app;
