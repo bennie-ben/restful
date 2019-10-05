@@ -1,11 +1,14 @@
 import React from 'react';
-import WriteNotes from "./Components/WriteNotes";
+import Routers from "./Router";
+import GlobalStyles from "./GlobalStyles";
+
 
 class App extends React.Component{
   render(){
     return(
       <div className = "App">
-        <WriteNotes/>
+        <GlobalStyles/>
+        <Routers/>
       </div>
     );
   }
